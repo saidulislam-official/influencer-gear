@@ -26,10 +26,18 @@ body{
 }
 
 /* header start */
+
+header{
+    margin-left: 120px;
+    margin-right: 120px;
+}
 .header-nav{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+    display: flex;
+    /* align-items: center;
+    justify-items: center; */
+    justify-content: space-between;
     margin-top: 86px;
 }
 .nav-title{
@@ -63,11 +71,13 @@ body{
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     justify-items: center;
+    /* align-items: center;
+    justify-items: center; */
     margin-top: 50px;
 }
-.banner-info{
-    padding-left: 420px;
-}
+/* .banner-info{
+    padding-left: 420px; 
+} */
 
 .banner-title{
     color: #3A3A3A;
