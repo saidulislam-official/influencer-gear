@@ -12,6 +12,19 @@ body{
     font-style: normal;
 }
 
+.primary-button{
+    display:flex;
+    padding: 10px 24px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 41px;
+    background: #E02C6D;
+    color: #FFF;font-size: 16px;
+    font-weight: 700;
+    border: none;
+    
+}
+
 /* header start */
 .header-nav{
     display: grid;
@@ -40,8 +53,42 @@ body{
     font-size: 16px;
     font-weight: 600;
 }
+/* nav end */
+
+/* header banner  start*/
 
 
+.banner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    margin-top: 50px;
+}
+.banner-info{
+    padding-left: 420px;
+}
+
+.banner-title{
+    color: #3A3A3A;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 70px; 
+}
+
+.banner-description{
+    color: #3A3A3A;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.banner-img{
+    background-image: url(../images/Circle\ design.svg);
+}
+
+/* header banner end */
 
 
 
