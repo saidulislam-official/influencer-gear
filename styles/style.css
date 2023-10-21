@@ -30,6 +30,7 @@ body{
 header{
     margin-left: 120px;
     margin-right: 120px;
+    margin-top: 48px;
 }
 .header-nav{
     /* display: grid;
@@ -38,7 +39,6 @@ header{
     /* align-items: center;
     justify-items: center; */
     justify-content: space-between;
-    margin-top: 86px;
 }
 .nav-title{
     color: #3A3A3A;
@@ -100,8 +100,13 @@ header{
 
 /* header banner end */
 
-
-
+/*--------
+Media query
+--------- */
+/* mobile device */
+@media only screen  and  {
+    
+}
 
 
 
