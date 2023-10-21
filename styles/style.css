@@ -100,6 +100,19 @@ header{
 
 /* header banner end */
 
+/*------------
+main -> section -> company-logo-section
+--------------*/
+.company-logo-section{
+    margin-left: 120px;
+    margin-right: 120px;
+}
+.company-logo-main{
+    display: flex;
+    gap:61px;
+}
+
+
 /*--------
 Media query
 --------- */
