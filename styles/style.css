@@ -227,6 +227,7 @@ hr{
 footer{ 
     height: 239px;
     background: #0A0826;
+    margin-top: 100px;
 }
 .footer-info{
     color: #FFF;
