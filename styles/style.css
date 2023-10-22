@@ -6,7 +6,7 @@
     font-family: poppins;
 }
 
-body{
+header, main{
     background: #FFF;
     line-height: normal;
     font-style: normal;
@@ -149,8 +149,21 @@ hr{
     justify-content: center;
 }
 .carts-title{
+    color: var(--text-gray-900, #18191F);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px; 
     padding-top: 16px;
     padding-bottom: 6px;
+}
+.carts-price{
+    color: var(--Dark-Color, rgba(0, 0, 0, 0.87));
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 36px */
 }
 .carts-rating{
     padding-top: 5px;
@@ -166,20 +179,58 @@ hr{
 .star-fill{
     color: #FB8200;
 }
+.star-unfill{
+    color: #E0E0E0;
+}
 
 
+.see-more{
+    padding-top: 50px;
+    padding-right: 150px;
+    text-align: right;
+    color: rgba(224, 44, 109, 0.87);
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: flex-end;
+}
 
+/* product feature */
+.feature-section{
+    margin-top: 100px;
+    margin-bottom: 100px;
 
+}
+.features-product{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.feature-info h1{
+    color: #0A0826;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 60px; 
+}
+.feature-info p{
+    width: 501px;
+    height: 88px;
+    color: #6C6C6C;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px; /* 175% */
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
 
 /*--------
 Media query
 --------- */
 /* mobile device */
 @media only screen and (min-width:320px) and (max-width: 767px){
-    body{
-        margin-left: 20px;
-        margin-right: 20px;
-    }
+
     .header-nav{
         display: flex;
         flex-direction: column;
@@ -222,12 +273,52 @@ hr{
 
 
 /* popular section cart */
+.popular-collection{
+    margin: 0;
+    padding: 0;
+    /* width: 100%; */
+}
 .main-cart{
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 32px;
     justify-items: center;
     align-items: center;
 
+    }
+    .see-more{
+        display: flex;
+        gap: 8px;
+    }
+/* feature section  */
+        
+.feature-section{
+    margin: 0;
+    padding: 0;
+    width: 100%; 
+    }
+    .features-product{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 30px;
+        
+    }
+    .features-product img{
+        width: 100%;
+        height: 100%;
+    }
+    .feature-info h1{
+        height: 100%;
+        width: 100%;
+        text-align: center;
+    }
+    .feature-info p{
+        width: auto;
+        height: auto;
+        text-align: center;
+    }
+    .feature-info button{
+        margin-top: 15px;
+        margin-bottom: 30px;
     }
 }
